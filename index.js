@@ -5,6 +5,7 @@ import { startups } from "./data.js";
 //   name: "Akshay kumar",
 //   mob: 78468793978,
 // };
+const PORT = 8000;
 const app = express();
 
 app.get("/api", (req, res) => {
@@ -68,4 +69,4 @@ app.get("/api/:fields/:term", (req, res) => {
   res.json(FilteredData);
 });
 
-app.listen(8000, () => "Listning 8000");
+app.listen(${PORT}, () => "Listning 8000");
