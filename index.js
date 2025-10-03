@@ -7,6 +7,7 @@ import { app_route } from "./routes/app_route.js";
 //   name: "Akshay kumar",
 //   mob: 78468793978,
 // };
+const PORT = 8000;
 const app = express();
 
 // app.get("/api", (req, res) => {
@@ -75,4 +76,4 @@ app.use((req, res) => {
     .json({ error: "Endpoint not found. Please check the API documentation." });
 });
 
-app.listen(8000, () => "Listning 8000");
+app.listen(${PORT}, () => "Listning 8000");
